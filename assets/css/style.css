@@ -70,7 +70,7 @@ section.s.alt{background:var(--bg-2);border-top:1px solid var(--line);border-bot
 .card .body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
 .card .meta{font-size:.85rem;color:var(--muted)}
 .card h3 a{color:var(--ink)}
-.card .val{margin-top:auto;font-weight:700;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.card .val{margin-top:auto;font-size:.85rem;color:var(--muted);padding-top:6px;border-top:1px solid var(--line)}
 .tag{display:inline-block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:.2em .6em;border-radius:999px;background:var(--bg-2);color:var(--ink-2);font-weight:700}
 
 /* pagină proiect */
