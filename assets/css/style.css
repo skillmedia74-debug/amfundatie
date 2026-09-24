@@ -122,3 +122,17 @@ footer .small{font-size:.85rem;color:#A8A29A;margin-top:18px;grid-column:1/-1;bo
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .skip{position:absolute;left:-9999px}
 .skip:focus{left:12px;top:12px;background:#fff;padding:.5em 1em;z-index:99}
+
+/* protecție de bază a imaginilor + lightbox */
+img{-webkit-user-drag:none;user-select:none;-webkit-user-select:none}
+.gal img,.card .img img,.hero .art img,.brand img,footer img,.lb img{pointer-events:none}
+.gal a.ph{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:99;background:rgba(20,18,16,.94);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:94vw;max-height:90vh;width:auto;height:auto;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;font:700 2rem/1 Manrope,Arial,sans-serif;width:52px;height:52px;border-radius:50%;cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.28)}
+.lb .lb-x{top:16px;right:16px}
+.lb .lb-p{left:12px;top:50%;transform:translateY(-50%)}
+.lb .lb-n{right:12px;top:50%;transform:translateY(-50%)}
+@media(max-width:600px){.lb button{width:42px;height:42px;font-size:1.5rem}}
